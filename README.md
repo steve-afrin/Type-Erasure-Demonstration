@@ -14,6 +14,12 @@ words the runtime doesn't care what objects are used with a specific object
 even when it violates what was defined by the developer at the time of
 writing the code.
 
+To be very clear about the subject, the reflection API still can retrieve
+the type information about the class. It's not that the class metadata
+doesn't contain the type information. The only point regarding type
+erasure is that the runtime system (the JVM) does nothing to ensure
+type safety using generics.
+
 This project is a very simplistic Java program - no Maven or Gradle
 necessary for dependency management. And this program compiles and
 executes in any Java version after Java 5, but it was developed with
